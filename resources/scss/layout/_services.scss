@@ -1,0 +1,9 @@
+ol {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1.2em;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

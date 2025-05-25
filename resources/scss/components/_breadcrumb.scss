@@ -1,0 +1,32 @@
+// breadcrumb
+// breadcrumb
+// breadcrumb
+
+.breadcrumb {
+    padding: 65px 10px 1.125rem 10px;
+
+    &__wrapper {
+        border-top: .0625rem solid var(--line-color);
+        border-bottom: .0625rem solid var(--line-color);
+        display: flex;
+        align-items: center;
+        padding: 1.0625rem 14px;
+        gap: .6875rem;
+        font-size:.625rem;
+        text-transform: uppercase;
+        line-height: 1;
+
+        .breadcrumb__info {
+
+            h5{
+                font-size:.625rem;
+                text-transform: uppercase;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+// breadcrumb
+// breadcrumb
+// breadcrumb

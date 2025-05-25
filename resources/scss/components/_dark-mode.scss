@@ -1,0 +1,111 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+
+  h1, h2, h3, h4, h5 {
+    color: white !important;
+  }
+
+  // Area utama halaman supaya ikut dark
+  main, section, article, div.content, .container {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+
+  a {
+    color: #a0a0a0;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  // Existing component styles kamu...
+  .breadcrumb {
+    background-color: #1f1f1f;
+    color: #ccc;
+
+    a {
+      color: #aaa;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .button, button {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+
+  .card {
+    background-color: #1e1e1e;
+    color: #eee;
+    border: 1px solid #333;
+  }
+
+  .carousel {
+    background-color: #1c1c1c;
+
+    .carousel-item {
+      color: #eee;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      filter: invert(1);
+    }
+  }
+
+  .footer {
+    background-color: #121212;
+    color: #bbb;
+
+    a {
+      color: #ccc;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .header {
+    background-color: #1a1a1a;
+    color: #fff;
+
+    a {
+      color: #ddd;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .loading {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .page-cover {
+    background-color: #111;
+    color: #f5f5f5;
+  }
+
+  .subtitle {
+    color: #bbb;
+  }
+
+  .animated {
+    filter: brightness(0.8);
+  }
+
+  .team {
+  background-color: var(--body-color);
+}
+}

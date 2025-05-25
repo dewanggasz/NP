@@ -1,0 +1,38 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.cdnfonts.com/css/ulagadi-sans');
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+
+    /*========== Colors ==========*/
+    --text-color: rgb(15, 41, 22);
+    --text-color-light: white;
+    --body-color: white;
+    --green-light: #41634b;
+    --line-one: #9DBFA7;
+    --body-color-dark: rgb(15, 41, 22);
+    --container-color: white;
+    --scroll-bar-color:  white;
+    --scroll-thumb-color: rgb(15, 41, 22);
+    --gray : #dae4ec;
+    --gray-transparan: #dae4ec42;
+    --line-color: #eef1f5;
+    
+
+    /*========== Font and typography ==========*/
+    --heading-font: "Barlow", sans-serif;;
+    --paragraph-font: "Montserrat", sans-serif;
+}
+
+    // Light Theme
+    $color-bg-light: #ffffff;
+    $color-text-light: #222;
+    $color-primary-light: #0066ff;
+    $color-secondary-light: #f5f5f5;
+
+    // Dark Theme
+    $color-bg-dark: #121212;
+    $color-text-dark: #eaeaea;
+    $color-primary-dark: #3399ff;
+    $color-secondary-dark: #1e1e1e;

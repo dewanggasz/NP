@@ -1,0 +1,81 @@
+// Cover
+// Cover
+// Cover
+
+.page-cover {
+    padding: 0 .625rem;
+
+    &__wrapper {
+        height: 600px;
+        background-color: rgb(15, 41, 22);
+        border-radius: .375rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: opacity(50%);
+        }
+
+        .page-cover__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding: 1.875rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .page-cover__overlay-top {
+
+                .sub-title {
+                    margin-bottom: 1rem;
+                    color: white;
+                    background-color: rgba(218,228,236,.14);
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 1.9375rem;
+                    letter-spacing: -.03em;
+                    line-height: 100%;
+                    font-weight: 400;
+                }
+            }
+
+            .page-cover__overlay-bot {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 16.625rem;
+                padding: .75rem .5rem .75rem 0;
+                border-bottom: .0625rem solid rgba(218,228,236,.5);
+
+                h2 {
+                    font-size: 1.25rem;
+                    color: white;
+                    line-height: 120%;
+                    font-weight: 400;
+                    letter-spacing: -.01em;
+                }
+
+                .page-cover__icon {
+                    font-size: .75rem;
+                    color: white;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
+// Cover
+// Cover
+// Cover

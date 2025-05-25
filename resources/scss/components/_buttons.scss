@@ -1,0 +1,244 @@
+//button
+//button
+//button
+
+// btn-cta
+
+// .button-cta-1
+.button-cta-1 {
+    position: relative;
+    display: block;
+    border-radius: 1.875rem;
+    background-color: var(--gray-transparan) ;
+    padding: .4rem 1rem;
+    font-size: .625rem;
+    letter-spacing: .05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbig.scrolled .button-cta-1 {
+    background-color: var(--gray);
+    transition: .5s ease-in-out;
+    color: var(--body-color-dark) ;
+}
+
+.button-cta-1.scrolled {
+    color: var(--body-color-dark);
+    transition: .5s ease-in-out;
+}
+
+.navbig.scrolled .button-cta-1:hover {
+    background-color: var(--body-color-dark);
+}
+// .button-cta-1
+
+// .button-cta-2
+.button-cta-2 {
+    position: relative;
+    display: block;
+    border-radius: 1.875rem;
+    background-color: var(--gray-transparan) ;
+    padding: .4rem 1rem;
+    font-size: .625rem;
+    letter-spacing: .05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.button-cta-2:hover {
+    background-color: var(--body-color-dark);
+    transition: .5s ease-in-out;
+    color: white !important;
+}
+
+.navbig.scrolled .button-cta-2 {
+    background-color: var(--gray);
+    transition: .5s ease-in-out;
+}
+
+.navbig.scrolled .button-cta-2:hover {
+    background-color: var(--body-color-dark);
+    color: white;
+}
+// .button-cta-2
+
+
+
+// btn-cta
+
+//about-us button
+
+.about-us__button:hover .about-us__button__right{
+    transform: translateX(10px);
+}
+  
+.about-us__button:hover .about-us__button__left i {
+    transform: rotate(0deg);
+}
+
+.about-us__button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: flex-start;
+    width: 300px;
+    opacity: 1;
+    color: white;
+   
+
+    .about-us__button__left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--green-light);
+        aspect-ratio: 1/1;
+        transform: translateX(0px);
+        width: 2.7rem;
+        position: relative;
+
+        i {
+            transform: rotate(-45deg);
+            transition: 0.5s ease-in-out;
+        }
+    }
+
+        .about-us__button__right {
+        width: 40%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        background-color: rgb(255, 255, 255);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+//about-us button
+
+//artikel button
+
+.articles__button:hover .article__button__right{
+    transform: translateX(10px);
+}
+  
+.article__button:hover .article__button__left span {
+    transform: rotate(0deg);
+}
+
+.article__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    color: white;
+   
+
+    .article__button__left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--body-color-dark);
+        aspect-ratio: 1/1;
+        transform: translateX(0px);
+        width: 2rem;
+        position: relative;
+
+        span {
+            transform: rotate(-45deg);
+            transition: 0.5s ease-in-out;
+        }
+    }
+
+        .article__button__right {
+        width: 40%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-size: .75rem;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        padding: .25rem .5rem;
+        border-radius: 1.875rem;
+        justify-content: center;
+        color: var(--text-color);
+        background-color: rgb(255, 255, 255);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+//artikel button
+
+//ourmission button
+
+.ourmission-button {
+    width: 40%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-size: .75rem;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        padding: .15rem .3rem;
+        border-radius: 1.875rem;
+        justify-content: center;
+        background-color: var(--gray-transparan);
+}
+
+//ourmission button
+
+.careerbutton {
+    padding: 15px 50px;
+    width: fit-content;
+    display: block;
+    background-color: var(--text-color);
+    color: white;
+    transition: .6s;
+    border: 2px solid var(--text-color);
+}
+
+.careerbutton:hover {
+    padding: 15px 50px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    background-color: transparent;
+}
+
+.careerbutton2 {
+    padding: 15px 50px;
+   text-align: center;
+    
+    background-color: var(--text-color);
+    color: white;
+    transition: .6s;
+    border: 2px solid var(--text-color);
+}
+
+.careerbutton2:hover {
+    padding: 15px 50px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    background-color: transparent;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: $color-text-light;
+    
+    body.dark-mode & {
+      color: $color-text-dark;
+    }
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  

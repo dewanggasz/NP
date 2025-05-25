@@ -1,0 +1,188 @@
+// Variabel tema
+$sidebar-bg: #f4f4f4;
+$content-bg: #fff;
+$border-color: #ddd;
+$header-bg: #f0f0f0;
+$padding: 16px;
+$padding-container: 0rem 8rem 0rem 8rem;
+
+// FAQ container
+.faq-container {
+  padding: $padding-container;
+
+  // flex layout untuk FAQ
+  .faq-layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+   
+
+    // Sidebar
+    .faq-sidebar {
+      height: 20%;
+      h1 {
+        font-family: serif;
+        font-size: 4.8rem;
+      }
+    }
+
+    // Konten FAQ
+    .faq-content {
+      display: flex;
+      align-items: start;
+      position: relative;
+      height: 80%;
+      width: 100%;
+      overflow-y: hidden;
+
+      // Accordion
+      .faq-accordion {
+        width: 100%;
+        gap: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+  
+        .faq-accordion-item {
+          border-bottom: .5px solid black;
+          margin-bottom: 0px;
+          width: 100%;
+
+          .faq-accordion-header {
+        
+            border: none;
+            padding: 12px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;  // To position the arrow at the right
+            align-items: center;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: darken($header-bg, 5%);
+            }
+
+            .accordion-arrow {
+              transition: transform 0.3s ease;  // For smooth rotation
+            }
+          }
+
+          .faq-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0px 15px; // Awalnya padding 0
+
+            &.active {
+              max-height: 600px; // Tinggi maksimal konten
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-faq {
+
+  .faq-container {
+    margin-top: 4rem;
+  }
+
+  .cta {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .faq-container {
+    padding: 0px 10px;
+  }
+   .faq-sidebar {
+
+    h1 {
+      font-size: 2rem !important;
+      text-align: center;
+      line-height: 120%;
+      letter-spacing: -.04em;
+    }
+  }
+
+    .faq-accordion-item {
+    border-bottom: .5px solid var(--text-color);
+    margin-bottom: 0px;
+    width: 100% !important;
+
+  }
+}
+
+@media (max-width: 678px) {
+
+  .faq-container {
+    padding: 0px 10px;
+  }
+
+  .faq-accordion-item {
+    border-bottom: .5px solid var(--text-color);
+    margin-bottom: 0px;
+    width: 100% !important;
+  }
+
+  .faq-sidebar {
+
+    h1 {
+      font-size: 2.5rem !important;
+      text-align: center;
+      line-height: 120%;
+      letter-spacing: -.04em;
+    }
+  }
+
+  .faq-accordion-header {
+        
+    padding: 12px 0px !important;
+  }
+
+  .faq-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0px 0px !important;
+    font-size: .9375rem;
+    line-height: 120%;
+
+    &.active {
+      max-height: 600px; // Tinggi maksimal konten
+      padding: 12px 0 !important;
+    }
+  }
+
+  .faq-accordion-header {
+    font-size: 1.25rem;
+    line-height: 120%;
+    letter-spacing: -.02em;
+
+    .accordion-arrow {
+      font-size: .8rem;
+    }
+  }
+
+  .main-faq {
+
+    .faq-container {
+      margin-top: 4rem;
+    }
+  
+    .cta {
+      margin-top: 5rem;
+      margin-bottom: 0rem;
+    }
+  }
+
+}

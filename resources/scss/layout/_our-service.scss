@@ -1,0 +1,229 @@
+/* OUR SERVICE PAGE */
+/* OUR SERVICE PAGE */
+/* OUR SERVICE PAGE */
+
+.overview {
+    padding: 0rem 10px 0rem 10px ;
+    margin-top: 3.125rem;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+        padding: 2.5rem 0;
+        display: flex;
+        border-top: 1px solid var(--gray);
+        border-bottom: 1px solid var(--gray);
+
+
+        .overview__top {
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 120%;
+                letter-spacing: -.02em;
+                color: var(--text-color);
+                font-weight: 400;
+            }
+
+            .overview-paragraph {
+
+                p {
+                    margin-top: 1.5rem;
+                    line-height: 120%;
+                    font-size: .9375rem;
+                    font-weight: 300;
+                    color: var(--text-color);
+                    opacity: 0.89871;
+                }
+            }
+        }
+    }
+}
+
+.our-service-client {
+    padding: 2.5rem 0;
+}
+
+.servicecard-container {
+    padding: 0 10px 5rem 10px;
+
+    &__wrapper {
+        text-align: center;
+
+        .servicecard-heading {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            h2 {
+                font-size: 1.25rem;
+                line-height: 120%;
+                font-weight: 400;
+                letter-spacing: -.02em;
+            }
+        }
+
+        .servicecard-wrapper {
+    
+            .servicecard-wrapper-top {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .servicecard-wrapper-bot{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    }
+}
+
+.cta-ourservice {
+    margin-bottom: 5rem;
+
+    .cta {
+        margin-top: 0rem !important;
+    }
+}
+
+@media (min-width: 678px) {
+
+    .overview-header {
+        font-size: 2rem !important;
+    }
+
+    .servicecard-header {
+        font-size: 2rem !important;
+    }
+
+    .overview__bottom-img-wrapper {
+        width: 100%;
+        height: 741px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+
+    .overview {
+        padding: 5rem 3.125rem 0rem 3.125rem !important;
+    
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row !important;
+            gap: 8rem !important;
+            align-items: center;
+
+            .overview__top {
+                width: 50%;
+                order: 2;
+
+                h2 {
+                    width: 100%;
+                }
+
+                p {
+                    width: 100%;
+                }
+            }
+            .overview__bottom {
+                width: 50%;
+                order: 1;
+            }
+        }
+    }
+
+    .overview-header {
+        font-size: 2.3rem !important;
+        line-height: 98% !important;
+    }
+
+    .overview-paragraph {
+        p {
+            font-size: 14px !important;
+        }
+    }
+
+    .servicecard-header {
+        font-size: 2rem !important;
+    }
+
+    .overview__bottom-img-wrapper {
+        min-width: 600px;
+        max-width: 800px;
+        height: 600px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .our-service-client {
+        padding: 4rem 0;
+        padding-top: 4rem;
+    }
+
+    .servicecard-heading {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem !important;
+    }
+
+    .servicecard-header {
+        font-size: 2.3rem !important;
+        max-width: 55.9375rem !important;
+    }
+
+    .servicecard-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem !important;
+    }
+
+    .servicecard-wrapper-top {
+        // padding: 0 3.125rem;
+        display: flex;
+        flex-direction: row !important;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .servicecard-wrapper-bot{
+        padding: 0 3.125rem;
+        display: flex;
+        flex-direction: row !important;
+        gap: 1.5rem;
+    }
+
+    .ourservice-card__content-top {
+
+        h3 {
+            height: 100px !important;
+        }
+    }
+
+    .cta-ourservice {
+        margin-bottom: 7rem;
+
+        .cta {
+            margin-top: 2rem !important;
+        }
+    }
+}
+

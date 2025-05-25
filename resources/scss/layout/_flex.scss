@@ -1,0 +1,25 @@
+.flex {
+    display: flex;
+}
+
+.flxcenter-vertical-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flxcenter-vertical-spcbtwn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flx2col-spcbtwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flx2row {
+    display: flex;
+    flex-direction: column;
+}
