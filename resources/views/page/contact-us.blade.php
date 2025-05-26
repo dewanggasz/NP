@@ -15,7 +15,8 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js'])<link rel="stylesheet" href="/assets/css/style.css">
+    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js'])
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 

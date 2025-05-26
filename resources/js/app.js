@@ -56,98 +56,98 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-/// Ambil elemen header
-const navBig = document.querySelector(".navbigIndex");
-const megaMenu= document.querySelector(".dropdown-menuIndex");
-const navMobile = document.querySelector(".navmobile");
-const logoBig1 = document.getElementById("logoBigIndex");
-const logoMobile1 = document.getElementById("logoMobileIndex");
+// /// Ambil elemen header
+// const navBig = document.querySelector(".navbigIndex");
+// const megaMenu= document.querySelector(".dropdown-menuIndex");
+// const navMobile = document.querySelector(".navmobile");
+// const logoBig1 = document.getElementById("logoBigIndex");
+// const logoMobile1 = document.getElementById("logoMobileIndex");
 
-// Variabel untuk menyimpan posisi scroll sebelumnya
-let lastScrollY = window.scrollY;
+// // Variabel untuk menyimpan posisi scroll sebelumnya
+// let lastScrollY = window.scrollY;
 
-// Fungsi untuk memperbarui animasi header
-function updateHeader() {
-  const currentScroll = window.scrollY;
+// // Fungsi untuk memperbarui animasi header
+// function updateHeader() {
+//   const currentScroll = window.scrollY;
 
-  // Desktop logo change
-  if (currentScroll > 50) {
-    navBig.classList.remove("transparent");
-    megaMenu.classList.remove("transparent");
-    navBig.classList.add("scrolled");
-    logoBig1.src = "/resources/img/LOGO NPS GREEN.png";
-  } else {
-    navBig.classList.remove("scrolled");
-    navBig.classList.add("transparent");
-    megaMenu.classList.add("transparent");
-    logoBig1.src = "/resources/img/LOGO NPS WHITE.png";
-  }
+//   // Desktop logo change
+//   if (currentScroll > 50) {
+//     navBig.classList.remove("transparent");
+//     megaMenu.classList.remove("transparent");
+//     navBig.classList.add("scrolled");
+//     logoBig1.src = "/resources/img/LOGO NPS GREEN.png";
+//   } else {
+//     navBig.classList.remove("scrolled");
+//     navBig.classList.add("transparent");
+//     megaMenu.classList.add("transparent");
+//     logoBig1.src = "/resources/img/LOGO NPS WHITE.png";
+//   }
 
-  // Mobile logo change
-  if (currentScroll > 50) {
-    navMobile.classList.remove("transparent");
-    navMobile.classList.add("scrolled");
-    logoMobile1.src = "/resources/img/LOGO NPS GREEN.png";
-  } else {
-    navMobile.classList.remove("scrolled");
-    navMobile.classList.add("transparent");
-    logoMobile1.src = "/resources/img/LOGO NPS WHITE.png";
-  }
+//   // Mobile logo change
+//   if (currentScroll > 50) {
+//     navMobile.classList.remove("transparent");
+//     navMobile.classList.add("scrolled");
+//     logoMobile1.src = "/resources/img/LOGO NPS GREEN.png";
+//   } else {
+//     navMobile.classList.remove("scrolled");
+//     navMobile.classList.add("transparent");
+//     logoMobile1.src = "/resources/img/LOGO NPS WHITE.png";
+//   }
 
-  lastScrollY = currentScroll;
-}
+//   lastScrollY = currentScroll;
+// }
 
-// Jalankan logika saat DOM selesai dimuat
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.scrollY <= 50) {
-    navBigIndex.classList.add("transparent");
-    navMobile.classList.add("transparent");
-  }
-  updateHeader(); // Periksa kondisi awal
-});
+// // Jalankan logika saat DOM selesai dimuat
+// document.addEventListener("DOMContentLoaded", () => {
+//   if (window.scrollY <= 50) {
+//     navBig.classList.add("transparent");
+//     navMobile.classList.add("transparent");
+//   }
+//   updateHeader(); // Periksa kondisi awal
+// });
 
-// Tambahkan event listener untuk scroll
-window.addEventListener("scroll", updateHeader);
+// // Tambahkan event listener untuk scroll
+// window.addEventListener("scroll", updateHeader);
 
 
 
-//mobile nav
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
+// //mobile nav
+// const hamburger = document.getElementById("hamburger");
+// const mobileMenu = document.getElementById("mobileMenu");
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    mobileMenu.classList.toggle("open");
+// hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("open");
+//     mobileMenu.classList.toggle("open");
     
-    // Toggle teks tombol hamburger
-    const hamburgerText = hamburger.querySelector("a");
-    if (mobileMenu.classList.contains("open")) {
-        hamburgerText.textContent = "Close"; // Ubah menjadi "Close" saat menu terbuka
-    } else {
-        hamburgerText.textContent = "Menu"; // Kembali ke "Menu" saat menu tertutup
-    }
-});
+//     // Toggle teks tombol hamburger
+//     const hamburgerText = hamburger.querySelector("a");
+//     if (mobileMenu.classList.contains("open")) {
+//         hamburgerText.textContent = "Close"; // Ubah menjadi "Close" saat menu terbuka
+//     } else {
+//         hamburgerText.textContent = "Menu"; // Kembali ke "Menu" saat menu tertutup
+//     }
+// });
 
-const navmobile = document.querySelector(".navmobile");
+// const navmobile = document.querySelector(".navmobile");
 
-function updateNavMobile() {
-    const currentScroll = window.scrollY;
-    if (currentScroll > 0) {
-        navmobile.classList.add("scrolled");
-    } else {
-        navmobile.classList.remove("scrolled");
-    }
-}
+// function updateNavMobile() {
+//     const currentScroll = window.scrollY;
+//     if (currentScroll > 0) {
+//         navmobile.classList.add("scrolled");
+//     } else {
+//         navmobile.classList.remove("scrolled");
+//     }
+// }
 
-document.addEventListener("DOMContentLoaded", () => {
-    updateNavMobile();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     updateNavMobile();
+// });
 
-window.addEventListener("scroll", updateNavMobile);
+// window.addEventListener("scroll", updateNavMobile);
 
-//header animation
-//header animation
-//header animation
+// //header animation
+// //header animation
+// //header animation
 
 // Timeline untuk mengatur semua animasi
 const tl = gsap.timeline({
@@ -165,7 +165,7 @@ const tl = gsap.timeline({
 tl.to(".overlay-slide", {
   y: "-100%", // Geser content ke atas sebanyak tinggi hero
   duration: 1,
-  invalidateOnRefresh: true,
+  // invalidateOnRefresh: true,
 });
 
 //landing-page slide animation
@@ -176,16 +176,16 @@ tl.to(".overlay-slide", {
 gsap.to (".hero__video",{
   opacity: 1,
   delay: 4,
-  duration: 3,
-  invalidateOnRefresh: true
+  duration: 3
+  // invalidateOnRefresh: true
 })
 
 gsap.to (".hero__caption",{
   opacity: 1,
   delay: 4,
   duration: 1,
-  y: -180,
-  invalidateOnRefresh: true
+  y: -180
+  // invalidateOnRefresh: true
 })
 //hero animation
 
@@ -293,55 +293,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //service-animation
 //service-animation
   
-//CLIENT SLIDER ANIMATION
-//CLIENT SLIDER ANIMATION
-//CLIENT SLIDER ANIMATION
-
-// Ambil elemen container dan slide
-const container = document.querySelector('.client__container');
-const slides = Array.from(document.querySelectorAll('.client__slide'));
-
-// Gandakan elemen secara terus-menerus (infinite cloning)
-function infiniteClone() {
-    const totalSlides = slides.length;
-
-    // Duplikasi setiap slide dan tambahkan ke dalam container secara berulang
-    slides.forEach((slide) => {
-        const clone = slide.cloneNode(true);
-        container.appendChild(clone); // Tambahkan clone ke container
-    });
-
-    // Ketika animasi telah bergerak, lakukan cloning lagi
-    setTimeout(() => {
-        infiniteClone(); // Lanjutkan cloning setelah animasi bergerak
-    }, 20000); // Sesuaikan dengan durasi animasi
-}
-
-// Fungsi untuk memulai animasi
-function startSliderAnimation() {
-    // Hitung lebar total elemen dalam container
-    const totalWidth = container.scrollWidth;
-
-    // GSAP untuk animasi
-    gsap.to(container, {
-        x: -totalWidth / 2, // Gerakkan setengah panjang container
-        duration: 20, // Durasi animasi
-        ease: "none", // Animasi linear
-        repeat: -1, // Ulangi animasi tanpa batas
-    });
-
-    // Mulai cloning setelah animasi dimulai
-    infiniteClone();
-}
-
-// Panggil fungsi untuk memulai animasi
-startSliderAnimation();
-
-//CLIENT SLIDER ANIMATION
-//CLIENT SLIDER ANIMATION
-//CLIENT SLIDER ANIMATION
-
-
 // ARTIKEL CAROUSEL
 // ARTIKEL CAROUSEL
 // ARTIKEL CAROUSEL
@@ -456,22 +407,6 @@ window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
 
-// // Initialize Lenis
-// const lenis = new Lenis();
-
-// // Listen for the scroll event and log the event data
-// lenis.on('scroll', (e) => {
-//   console.log(e);
-// });
-
-// // Use requestAnimationFrame to continuously update the scroll
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
-
-// requestAnimationFrame(raf);
-
 //for scroll to target
 document.querySelectorAll('.scroll-link').forEach(link => {
   link.addEventListener('click', function (e) {
@@ -486,43 +421,6 @@ document.querySelectorAll('.scroll-link').forEach(link => {
   });
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const toggleBtn = document.getElementById('toggle-dark');
 
-//   // Cek localStorage untuk status dark mode
-//   if (localStorage.getItem('dark_mode') === 'true') {
-//     document.body.classList.add('dark-mode');
-//     toggleBtn.innerHTML = `<i data-lucide="sun"></i>`;
-//   } else {
-//     toggleBtn.innerHTML = `<i data-lucide="moon"></i>`;
-//   }
-
-//   lucide.createIcons();
-
-//   toggleBtn.addEventListener('click', () => {
-//     const isDark = document.body.classList.toggle('dark-mode');
-//     localStorage.setItem('dark_mode', isDark); // Simpan status
-
-//     const newIcon = isDark ? 'sun' : 'moon';
-//     toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
-//     lucide.createIcons();
-//   });
-// });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const toggleBtn = document.getElementById('toggle-dark');
-
-//   // Render pertama kali
-//   lucide.createIcons();
-
-//   toggleBtn.addEventListener('click', () => {
-//     const isDark = document.body.classList.toggle('dark-mode');
-//     const newIcon = isDark ? 'sun' : 'moon';
-
-//     // Ganti isi tombol dengan icon baru
-//     toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
-//     lucide.createIcons();
-//   });
-// });
 
 

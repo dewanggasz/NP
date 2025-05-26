@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js'])
+    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js'])
 </head>
 <body>
 
