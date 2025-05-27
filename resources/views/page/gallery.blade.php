@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js'])
+    @vite (['resources/scss/style.scss', 'resources/js/loading.js', 'resources/js/header.js', 'resources/js/footer.js'])
 </head>
 <body>
 
@@ -372,7 +372,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         const buttons = document.querySelectorAll('.filter-buttons button');

@@ -20,35 +20,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
 // loadingscreen
 
 
-  gsap.to(".loader", 0.25, {
-    delay: 3.5,
-    opacity: 0,
-  })
+  // gsap.to(".loader", 0.25, {
+  //   delay: 3.5,
+  //   opacity: 0,
+  // })
 
-  gsap.to (".bar", 1.5, {
-    delay: 3.5,
-    height: 0,
-    stagger: {
-      amount: 0.5,
-    },
-    ease: "power4.inOut",
-  })
+  // gsap.to (".bar", 1.5, {
+  //   delay: 3.5,
+  //   height: 0,
+  //   stagger: {
+  //     amount: 0.5,
+  //   },
+  //   ease: "power4.inOut",
+  // })
 
-  gsap.to (".overlay",{
-    zIndex: -1,
-    delay: 5,
-  })
-  gsap.to (".loader",{
-    zIndex: -1,
-    delay: 5,
-  })
+  // gsap.to (".overlay",{
+  //   zIndex: -1,
+  //   delay: 5,
+  // })
+  // gsap.to (".loader",{
+  //   zIndex: -1,
+  //   delay: 5,
+  // })
 
-  gsap.to (".header",{
-    zIndex: 10000000,
-    delay: 5,
-    duration: 7,
+  // gsap.to (".header",{
+  //   zIndex: 10000000,
+  //   delay: 5,
+  //   duration: 7,
     
-  })
+  // })
 
 // loadingscreen
 // loadingscreen
@@ -381,21 +381,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // ARTIKEL CAROUSEL
 // ARTIKEL CAROUSEL
 
-//footer animation
-//footer animation
-//footer animation
-
-document.addEventListener('DOMContentLoaded', () => {
-  const h2Element = document.querySelector('.footer-mobile-three h2');
-  const textContent = h2Element.textContent;
-
-  // Gandakan teks untuk membuat efek looping
-  h2Element.textContent = `${textContent} ${textContent}`;
-});
-
-//footer animation
-//footer animation
-//footer animation
 
 //landing-page slide animation
 //landing-page slide animation

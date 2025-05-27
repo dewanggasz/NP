@@ -1,9 +1,9 @@
 /// Ambil elemen header
-const navBig = document.querySelector(".navbig");
-const megaMenu= document.querySelector(".dropdown-menu");
+const navBig = document.querySelector(".navbigIndex");
+const megaMenu= document.querySelector(".dropdown-menuIndex");
 const navMobile = document.querySelector(".navmobile");
-const logoBig1 = document.getElementById("logoBig2");
-const logoMobile1 = document.getElementById("logoMobile2");
+const logoBig1 = document.getElementById("logoBigIndex");
+const logoMobile1 = document.getElementById("logoMobileIndex");
 
 // Variabel untuk menyimpan posisi scroll sebelumnya
 let lastScrollY = window.scrollY;
@@ -22,7 +22,7 @@ function updateHeader() {
     navBig.classList.remove("scrolled");
     navBig.classList.add("transparent");
     megaMenu.classList.add("transparent");
-    logoBig1.src = "/resources/img/LOGO NPS GREEN.png";
+    logoBig1.src = "/resources/img/LOGO NPS WHITE.png";
   }
 
   // Mobile logo change

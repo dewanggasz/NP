@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js', 'resources/js/client.js'])
+    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/loading.js', 'resources/js/headerIndex.js', 'resources/js/footer.js', 'resources/js/client.js'])
 </head>
 <body class="{{ session('dark_mode') ? 'dark-mode' : '' }}">
     @yield('content')
@@ -574,23 +574,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-<!-- <script>
-  document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('toggle-dark');
-
-  // Render pertama kali
-  lucide.createIcons();
-
-  toggleBtn.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark-mode');
-    const newIcon = isDark ? 'sun' : 'moon';
-
-    // Ganti isi tombol dengan icon baru
-    toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
-    lucide.createIcons();
-  });
-});
-</script> -->
-
 </body>
 </html>
