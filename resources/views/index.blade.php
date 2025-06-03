@@ -14,10 +14,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js', 'resources/js/client.js'])
+    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js', 'resources/js/client.js', 'resources/js/swiper.js'])
 </head>
-<body class="{{ session('dark_mode') ? 'dark-mode' : '' }}">
+<body>
     @yield('content')
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
@@ -344,7 +348,7 @@
             
             <!--OUR-SERVICE-->
             
-            <!-- Testi -->
+            {{-- <!-- Testi -->
              <div class="team">
                 <div class="team__wrapper">
                     <div class="team__heading flxcenter-vertical-spcbtwn">
@@ -365,6 +369,68 @@
                         </li>
 
                     </ul>
+                </div>
+             </div>
+            <!-- Testi --> --}}
+
+            <!-- Testi -->
+             <div class="team">
+                <div class="team__wrapper">
+                    <div class="team__heading flxcenter-vertical-spcbtwn">
+                        <div class="team__head">
+                            <div class="sub-title">TESTIMONIAL</div>
+                            <h2>Client Voices.</h2>
+                        </div>
+                        <p class="team__caption">Authentic stories and honest feedback from our trusted partners who have experienced real impact, growth, and collaboration through our solutions across industries and project scales.</p>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="swiper-slideTop">
+                                    <img src="{{ asset('resources/img/quote1.png') }}" alt="" style="width: 100px">
+                                </div>
+                                <div class="swiper-slideMid">
+                                    <p class="quoteSwipe">
+                                        "Kami telah bekerja sama dengan Nata Praja sejak Maret 2023 dalam layanan call center khusus asuransi. Dibandingkan dengan BPO lain yang pernah kami gunakan, Nata Praja memberikan transparansi data yang luar biasa. Kami bisa memantau data real-time, baik panggilan masuk maupun terabaikan. Selama bekerja sama, pengalaman kami sangat positif. Sertiap permintaan kami sebagai klien selalu cepat diakomodasi oleh tim Nata Praja."
+                                    </p>
+                                </div>
+                                <div class="swiper-slideBot">
+                                    <div class="swiper-slideBotLeft">
+                                       <h2 class="nameSwiper">Apriani Kartina</h2> 
+                                       <p class="positionSwiper">Head Department of Customer Service & Case Monitoring</p> 
+                                    </div>
+                                    <div class="swiper-slideBotRight">
+                                        <img src="{{ asset('resources/img/quote2.png') }}" alt="" style="width: 100px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slideTop">
+                                    <img src="{{ asset('resources/img/quote1.png') }}" alt="" style="width: 100px">
+                                </div>
+                                <div class="swiper-slideMid">
+                                    <p class="quoteSwipe">
+                                        "Kami telah bekerja sama dengan Nata Praja sejak Maret 2023 dalam layanan call center khusus asuransi. Dibandingkan dengan BPO lain yang pernah kami gunakan, Nata Praja memberikan transparansi data yang luar biasa. Kami bisa memantau data real-time, baik panggilan masuk maupun terabaikan. Selama bekerja sama, pengalaman kami sangat positif. Sertiap permintaan kami sebagai klien selalu cepat diakomodasi oleh tim Nata Praja."
+                                    </p>
+                                </div>
+                                <div class="swiper-slideBot">
+                                    <div class="swiper-slideBotLeft">
+                                       <h2 class="nameSwiper">Kartina</h2> 
+                                       <p class="positionSwiper">Head Department of Customer Service & Case Monitoring</p> 
+                                    </div>
+                                    <div class="swiper-slideBotRight">
+                                        <img src="{{ asset('resources/img/quote2.png') }}" alt="" style="width: 100px">
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
              </div>
             <!-- Testi -->
@@ -567,30 +633,11 @@
             <!-- Footer -->
         </section>
     </main>
-
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-<!-- <script>
-  document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('toggle-dark');
-
-  // Render pertama kali
-  lucide.createIcons();
-
-  toggleBtn.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark-mode');
-    const newIcon = isDark ? 'sun' : 'moon';
-
-    // Ganti isi tombol dengan icon baru
-    toggleBtn.innerHTML = `<i data-lucide="${newIcon}"></i>`;
-    lucide.createIcons();
-  });
-});
-</script> -->
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

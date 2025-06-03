@@ -1,0 +1,57 @@
+.swiper {
+    width: 100%;
+    .swiper-wrapper {
+        .swiper-slide {
+            padding: 0 15rem;
+            padding-bottom: 7rem;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            // .swiper-slideTop {
+            // }
+
+            .swiper-slideMid {
+                text-align: left;
+                color: white;
+
+                .quoteSwipe {
+                    font-family: 'inter', Courier, monospace;
+                    font-weight: 100 !important;
+                    font-size: 18px;
+                }
+            }
+            .swiper-slideBot {
+                display: flex;
+                justify-content: space-between;
+                color: white;
+
+                .swiper-slideBotLeft {
+                    align-self: center;
+                    h2 {
+                        font-size: 18px;
+                        color: white;
+                        font-family: 'inter', Courier, monospace;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 200;
+                        font-family: 'inter', Courier, monospace;
+                    }
+                }
+                // .swiper-slideBotright {
+                    
+                   
+                // }
+            }
+        }
+    }
+
+    .swiper-pagination-bullet {
+    background-color: rgba(144, 144, 144, 0.455); /* warna bullet normal */
+    }
+
+    .swiper-pagination-bullet-active {
+    background-color: white; /* warna bullet aktif */
+}
+}
