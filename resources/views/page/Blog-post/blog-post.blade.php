@@ -15,7 +15,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js'])
+    @vite (['resources/scss/style.scss', 'resources/js/loading.js', 'resources/js/header.js', 'resources/js/footer.js'])
 </head>
 <body style="overflow-x: hidden;">
 

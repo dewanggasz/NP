@@ -19,7 +19,9 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!-- icon -->
-    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/header.js', 'resources/js/client.js', 'resources/js/swiper.js'])
+
+    @vite (['resources/scss/style.scss', 'resources/js/app.js', 'resources/js/loading.js', 'resources/js/headerIndex.js', 'resources/js/footer.js', 'resources/js/client.js', 'resources/js/swiper.js'])
+
 </head>
 <body>
     @yield('content')
@@ -638,6 +640,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+=======
+    <script src="https://unpkg.com/lucide@latest"></script>
+>>>>>>> 6c7ae38ac4ea37faefb609223b38d01255df0585
 </body>
 </html>
