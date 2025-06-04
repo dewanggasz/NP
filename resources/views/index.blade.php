@@ -179,7 +179,7 @@
                 <div class="services__wrapper flx2col-spcbtwn">
                     <div class="services__left">
                         <div class="services-img-wrapper">
-                            <img src="{{asset('resources/img/landingPage/Services/callCenter.png')}}" alt="" data-index="1" class="active">
+                            <img src="{{asset('resources/img/landingPage/Services/callCenter.jpg')}}" alt="" data-index="1" class="active">
                             <img src="{{asset('resources/img/landingPage/Services/validation.jpg')}}" alt="" data-index="2">
                             <img src="{{asset('resources/img/landingPage/Services/dataEntry.jpg')}}" alt="" data-index="3">
                             <img src="{{asset('resources/img/landingPage/Services/telemarketing.jpg')}}" alt="" data-index="4">
