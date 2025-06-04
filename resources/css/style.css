@@ -19,6 +19,7 @@ html, body {
   font-family: "Arial", sans-serif; /* Font default */
   font-size: 16px; /* Ukuran default untuk HTML */
   line-height: 1.5; /* Spasi antarbaris */
+  overflow: hidden;
 }
 
 body {
