@@ -33,7 +33,7 @@ function updateHeader() {
   } else {
     navMobile.classList.remove("scrolled");
     navMobile.classList.add("transparent");
-    logoMobile1.src = "/resources/img/LOGO NPS WHITE.png";
+    logoMobile1.src = "/resources/img/LOGO NPS GREEN.png";
   }
 
   lastScrollY = currentScroll;

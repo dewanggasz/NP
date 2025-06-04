@@ -1,0 +1,54 @@
+{
+  "resources/css/style.css": {
+    "file": "assets/style-CImsXXG3.css",
+    "src": "resources/css/style.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-SKQH9zM2.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/client.js": {
+    "file": "assets/client-DkpHGe7V.js",
+    "name": "client",
+    "src": "resources/js/client.js",
+    "isEntry": true
+  },
+  "resources/js/footer.js": {
+    "file": "assets/footer-CWLHkVri.js",
+    "name": "footer",
+    "src": "resources/js/footer.js",
+    "isEntry": true
+  },
+  "resources/js/header.js": {
+    "file": "assets/header-G0iv9vtZ.js",
+    "name": "header",
+    "src": "resources/js/header.js",
+    "isEntry": true
+  },
+  "resources/js/headerIndex.js": {
+    "file": "assets/headerIndex-D4s4q_Ph.js",
+    "name": "headerIndex",
+    "src": "resources/js/headerIndex.js",
+    "isEntry": true
+  },
+  "resources/js/loading.js": {
+    "file": "assets/loading-Dsz4w6sj.js",
+    "name": "loading",
+    "src": "resources/js/loading.js",
+    "isEntry": true
+  },
+  "resources/js/swiper.js": {
+    "file": "assets/swiper-Bho4LIiY.js",
+    "name": "swiper",
+    "src": "resources/js/swiper.js",
+    "isEntry": true
+  },
+  "resources/scss/style.scss": {
+    "file": "assets/style-D678mkRf.css",
+    "src": "resources/scss/style.scss",
+    "isEntry": true
+  }
+}
