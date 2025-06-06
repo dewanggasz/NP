@@ -113,22 +113,6 @@ Route::post('/contact', function (Illuminate\Http\Request $request) {
     return redirect()->back()->with('success', 'Your message has been sent!');
 });
 
-Route::get('/create-symlink', function () {
-    // Cek apakah link sudah ada
-    if (file_exists(public_path('storage'))) {
-        return 'Symbolic link already exists.';
-    }
-
-    // Buat symbolic link dari public/storage ke storage/app/public
-    try {
-        symlink(storage_path('app/public'), public_path('storage'));
-        return 'Symbolic link created successfully.';
-    } catch (Exception $e) {
-        return 'Error creating symbolic link: ' . $e->getMessage();
-    }
-});
-
-
 
 
 
