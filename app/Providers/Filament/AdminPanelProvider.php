@@ -27,7 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
 
 
-            ->path('$2y$10$KkUWjNVVeEBB1dmj2P0s1eph7v9UbF3Z2tbHug7c9bgKCqHkl/s6u')
+            ->path('$2y$10$KkUWjNVVeEBB1dmj2P0s1eph')
 
             ->login()
             ->colors([

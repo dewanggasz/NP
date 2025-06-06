@@ -15,136 +15,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 // Smooth-scroll
 // Smooth-scroll
 
-// loadingscreen
-// loadingscreen
-// loadingscreen
-
-
-  // gsap.to(".loader", 0.25, {
-  //   delay: 3.5,
-  //   opacity: 0,
-  // })
-
-  // gsap.to (".bar", 1.5, {
-  //   delay: 3.5,
-  //   height: 0,
-  //   stagger: {
-  //     amount: 0.5,
-  //   },
-  //   ease: "power4.inOut",
-  // })
-
-  // gsap.to (".overlay",{
-  //   zIndex: -1,
-  //   delay: 5,
-  // })
-  // gsap.to (".loader",{
-  //   zIndex: -1,
-  //   delay: 5,
-  // })
-
-  // gsap.to (".header",{
-  //   zIndex: 10000000,
-  //   delay: 5,
-  //   duration: 7,
-    
-  // })
-
-// loadingscreen
-// loadingscreen
-// loadingscreen
-
-
-
-// /// Ambil elemen header
-// const navBig = document.querySelector(".navbigIndex");
-// const megaMenu= document.querySelector(".dropdown-menuIndex");
-// const navMobile = document.querySelector(".navmobile");
-// const logoBig1 = document.getElementById("logoBigIndex");
-// const logoMobile1 = document.getElementById("logoMobileIndex");
-
-// // Variabel untuk menyimpan posisi scroll sebelumnya
-// let lastScrollY = window.scrollY;
-
-// // Fungsi untuk memperbarui animasi header
-// function updateHeader() {
-//   const currentScroll = window.scrollY;
-
-//   // Desktop logo change
-//   if (currentScroll > 50) {
-//     navBig.classList.remove("transparent");
-//     megaMenu.classList.remove("transparent");
-//     navBig.classList.add("scrolled");
-//     logoBig1.src = "/resources/img/LOGO NPS GREEN.png";
-//   } else {
-//     navBig.classList.remove("scrolled");
-//     navBig.classList.add("transparent");
-//     megaMenu.classList.add("transparent");
-//     logoBig1.src = "/resources/img/LOGO NPS WHITE.png";
-//   }
-
-//   // Mobile logo change
-//   if (currentScroll > 50) {
-//     navMobile.classList.remove("transparent");
-//     navMobile.classList.add("scrolled");
-//     logoMobile1.src = "/resources/img/LOGO NPS GREEN.png";
-//   } else {
-//     navMobile.classList.remove("scrolled");
-//     navMobile.classList.add("transparent");
-//     logoMobile1.src = "/resources/img/LOGO NPS WHITE.png";
-//   }
-
-//   lastScrollY = currentScroll;
-// }
-
-// // Jalankan logika saat DOM selesai dimuat
-// document.addEventListener("DOMContentLoaded", () => {
-//   if (window.scrollY <= 50) {
-//     navBig.classList.add("transparent");
-//     navMobile.classList.add("transparent");
-//   }
-//   updateHeader(); // Periksa kondisi awal
-// });
-
-// // Tambahkan event listener untuk scroll
-// window.addEventListener("scroll", updateHeader);
-
-
-
-// //mobile nav
-// const hamburger = document.getElementById("hamburger");
-// const mobileMenu = document.getElementById("mobileMenu");
-
-// hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("open");
-//     mobileMenu.classList.toggle("open");
-    
-//     // Toggle teks tombol hamburger
-//     const hamburgerText = hamburger.querySelector("a");
-//     if (mobileMenu.classList.contains("open")) {
-//         hamburgerText.textContent = "Close"; // Ubah menjadi "Close" saat menu terbuka
-//     } else {
-//         hamburgerText.textContent = "Menu"; // Kembali ke "Menu" saat menu tertutup
-//     }
-// });
-
-// const navmobile = document.querySelector(".navmobile");
-
-// function updateNavMobile() {
-//     const currentScroll = window.scrollY;
-//     if (currentScroll > 0) {
-//         navmobile.classList.add("scrolled");
-//     } else {
-//         navmobile.classList.remove("scrolled");
-//     }
-// }
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     updateNavMobile();
-// });
-
-// window.addEventListener("scroll", updateNavMobile);
-
 // //header animation
 // //header animation
 // //header animation
@@ -154,9 +24,9 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".grnd-overlay-slide", // Trigger animasi dimulai dari hero
     start: "top top", // Mulai saat hero di bagian atas viewport
-    scrub: true, // Animasi sinkron dengan scroll
+    scrub: 2, // Animasi sinkron dengan scroll
     pin: true,
-    end: "500%",
+    end: () => `${window.innerHeight * 6}px`,
     anticipatePin: false, // Meminimalkan glitch pada pinning
   },
 });
@@ -165,7 +35,7 @@ const tl = gsap.timeline({
 tl.to(".overlay-slide", {
   y: "-100%", // Geser content ke atas sebanyak tinggi hero
   duration: 1,
-  // invalidateOnRefresh: true,
+  invalidateOnRefresh: true,
 });
 
 //landing-page slide animation
@@ -183,11 +53,49 @@ gsap.to (".hero__video",{
 gsap.to (".hero__caption",{
   opacity: 1,
   delay: 4,
-  duration: 1,
+  duration: 2,
   y: -180
   // invalidateOnRefresh: true
 })
 //hero animation
+
+gsap.fromTo(".about-us-headline h2",
+  { opacity: 0 },
+  {
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-us-headline h2",
+      start: "top 100%",  // mulai animasi saat h2 hampir masuk layar
+      end: "top 60%",    // selesai animasi sebelum h2 benar-benar penuh di layar
+      toggleActions: "play reverse play reverse", // muncul saat scroll ke bawah, hilang saat scroll ke atas
+    },
+  }
+);
+
+gsap.utils.toArray(".about-us-items").forEach((item, i) => {
+    gsap.fromTo(item,
+        {
+            y: 40,
+            opacity: 0,
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            delay: i * 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".about-us__right",
+                start: "top 90%",
+                end: "bottom 20%",
+                toggleActions: "play reverse play reverse", // animasi akan reverse ketika scroll ke atas
+            },
+        }
+    );
+});
+
 
 //landing-page-team
 //landing-page-team

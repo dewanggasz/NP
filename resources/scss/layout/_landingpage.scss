@@ -86,8 +86,8 @@
   
   .content {
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: auto;
     z-index: 2;
     width: 100%;
   }
@@ -320,6 +320,7 @@
           width: 100%;
           overflow-y: scroll;
           scrollbar-width: thin;
+          overscroll-behavior: contain;
           // scrollbar-color: white white;
 
           .services-list {
