@@ -1,1 +1,0 @@
-const t=document.querySelector(".client__container"),n=Array.from(document.querySelectorAll(".client__slide"));function o(){n.length,n.forEach(e=>{const i=e.cloneNode(!0);t.appendChild(i)}),setTimeout(()=>{o()},2e4)}function c(){const e=t.scrollWidth;gsap.to(t,{x:-e/2,duration:20,ease:"none",repeat:-1}),o()}c();
